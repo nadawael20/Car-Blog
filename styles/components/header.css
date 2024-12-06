@@ -1,0 +1,142 @@
+.header {
+  background-color: var(--color-black);
+  padding: 1.4rem 0 1.6rem;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .logo-wrapper {
+  z-index: 999;
+}
+
+.logo-wrapper {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+.logo {
+  width: 5rem;
+  height: 5rem;
+}
+
+.logo-title {
+  color: var(--color-white);
+  font-family: var(--font-i);
+  text-transform: uppercase;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.nav-link {
+  color: var(--color-white);
+  font-size: 1.6rem;
+  letter-spacing: 0.4px;
+}
+
+.nav-link:hover {
+  text-shadow: var(--txt-bolder);
+}
+
+.header .nav-link.btn {
+  font-size: 1.4rem;
+  padding: 1.6rem 4rem;
+  letter-spacing: 0.3px;
+}
+
+/* Mobile Navigation Styling */
+.header .nav-btn {
+  display: none; /* hide it initially in large screens */
+  position: relative;
+  z-index: 999;
+  height: 5rem;
+  width: 5rem;
+}
+
+.header .nav-btn .icon {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/***************/
+/* RESPONSIVE */
+/*************/
+@media (max-width: 60em) {
+  .header .nav-link.btn {
+    padding: 1rem 3rem;
+  }
+}
+
+@media (max-width: 44em) {
+  /* MOBILE NAVIGATION BUTTON */
+  .header .nav-btn {
+    display: block; /* Open Mobile Navigation for small screens */
+  }
+
+  .header .nav-btn .icon {
+    transition: all var(--timing-animation);
+  }
+
+  .icon-close {
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  .close-nav .icon-open {
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+  }
+
+  .close-nav .icon-close {
+    visibility: visible;
+    pointer-events: initial;
+    opacity: 1;
+  }
+
+  /* MOBILE NAVIGATION ITSELF */
+  .header .nav {
+    position: absolute;
+    /* inset: 0; full screen */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(225, 225, 225, 0.5);
+    backdrop-filter: blur(10px);
+    transform: translateX(100vw);
+    transition: all var(--timing-animation);
+  }
+
+  .header .nav-list {
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  .header .nav-link {
+    color: var(--color-black);
+    font-weight: 600;
+  }
+
+  /* TOGGLING NAVIGATION */
+  .header:has(.close-nav) .nav {
+    transform: translateX(0);
+  }
+}

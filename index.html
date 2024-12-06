@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a blog about cars" />
+    <!-- favicon -->
+    <link rel="icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="scripts/script.js" defer></script>
+    <title>Blog</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__wrapper">
+        <a href="index.html" class="logo-wrapper">
+          <img class="logo" src="assets/images/logo.svg" alt="a car wheel" />
+          <p class="logo-title">Logo</p>
+        </a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">Blogs</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Contact Us</a></li>
+            <li>
+              <a href="#" class="nav-link btn btn-secondary">Subscribe</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="nav-btn" aria-label="Toggle Navigation Menu">
+          <img
+            src="assets/images/menu.svg"
+            alt="menu icon"
+            class="icon icon-open"
+          />
+          <img
+            src="assets/images/close.svg"
+            alt="close icon"
+            class="icon icon-close"
+          />
+        </button>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section-hero">
+        <div class="hero container">
+          <div class="hero__txt-wrapper">
+            <h1 class="heading-primary">
+              Your Journey<br />Your Car<br />Your Way
+            </h1>
+            <p class="description">
+              Lorem ipsum dolor sit amet consectetur. Diam volutpat morbi
+              elementum vel euismod aliquam. Amet ultrices neque augue
+              consectetur purus phasellus. Ullamcorper lorem montes varius amet
+              vestibulum tellus facilisis consequat pretium. Et faucibus laoreet
+              molestie diam semper fames diam eget.
+            </p>
+            <a href="#subscribe-form" class="btn btn-primary btn-subscribe">
+              Subscribe
+              <img src="assets/images/send-arrow.svg" alt="an arrow" />
+            </a>
+          </div>
+          <div class="hero__img-wrapper">
+            <img
+              class="img"
+              src="assets/images/car1.webp"
+              alt="an image of a car"
+            />
+            <img
+              class="img"
+              src="assets/images/car2.webp"
+              alt="an image of a car"
+            />
+            <img
+              class="img"
+              src="assets/images/car3.webp"
+              alt="an image of a car"
+            />
+            <img
+              class="img"
+              src="assets/images/car4.webp"
+              alt="an image of a car"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-posts container">
+        <h2 class="heading-secondary">All Posts</h2>
+        <div class="posts">
+          <article class="post-card">
+            <img
+              class="post-card__img"
+              src="assets/images/article1.webp"
+              alt="An image of a car"
+            />
+            <div class="post-card__txt-wrapper">
+              <h3 class="heading-tertiary">
+                A Review of Cars with Advanced Infotainment Systems
+              </h3>
+              <div class="post-card__author-info">
+                <img
+                  class="post-card__author-img"
+                  src="assets/images/author.webp"
+                  alt="A photo of Dasteen, the author of the article"
+                />
+                <div class="post-card__author-box">
+                  <p class="post-card__author-name">Dasteen</p>
+                  <p class="post-card__date">
+                    Jan 10, 2024 &nbsp;&nbsp;∙&nbsp;&nbsp; 3 min read
+                  </p>
+                </div>
+              </div>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur. Consectetur risus quis
+                diam hendrerit. Interdum mattis in sed diam egestas metus at
+                duis commodo. Cursus quis cursus dignissim egestas sollicitudin
+                tristique quis. Orci neque quis porttitor eu amet. ommodo.
+                Cursus quis cursus dignissim egestas sollicitudin tristique
+                quis. Orci neque quis porttitor eu amet.
+              </p>
+              <a href="post.html" class="btn btn-primary"
+                >Read full article...</a
+              >
+            </div>
+          </article>
+          <article class="post-card">
+            <img
+              class="post-card__img"
+              src="assets/images/article2.webp"
+              alt="An image of a car"
+            />
+            <div class="post-card__txt-wrapper">
+              <h3 class="heading-tertiary">
+                A Review of Cars with Advanced Infotainment Systems
+              </h3>
+              <div class="post-card__author-info">
+                <img
+                  class="post-card__author-img"
+                  src="assets/images/author.webp"
+                  alt="A photo of Dasteen, the author of the article"
+                />
+                <div class="post-card__author-box">
+                  <p class="post-card__author-name">Dasteen</p>
+                  <p class="post-card__date">
+                    Jan 10, 2024 &nbsp;&nbsp;∙&nbsp;&nbsp; 3 min read
+                  </p>
+                </div>
+              </div>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur. Consectetur risus quis
+                diam hendrerit. Interdum mattis in sed diam egestas metus at
+                duis commodo. Cursus quis cursus dignissim egestas sollicitudin
+                tristique quis. Orci neque quis porttitor eu amet. ommodo.
+                Cursus quis cursus dignissim egestas sollicitudin tristique
+                quis. Orci neque quis porttitor eu amet.
+              </p>
+              <a href="post.html" class="btn btn-primary"
+                >Read full article...</a
+              >
+            </div>
+          </article>
+          <article class="post-card">
+            <img
+              class="post-card__img"
+              src="assets/images/article3.webp"
+              alt="An image of a car"
+            />
+            <div class="post-card__txt-wrapper">
+              <h3 class="heading-tertiary">
+                A Review of Cars with Advanced Infotainment Systems
+              </h3>
+              <div class="post-card__author-info">
+                <img
+                  class="post-card__author-img"
+                  src="assets/images/author.webp"
+                  alt="A photo of Dasteen, the author of the article"
+                />
+                <div class="post-card__author-box">
+                  <p class="post-card__author-name">Dasteen</p>
+                  <p class="post-card__date">
+                    Jan 10, 2024 &nbsp;&nbsp;∙&nbsp;&nbsp; 3 min read
+                  </p>
+                </div>
+              </div>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur. Consectetur risus quis
+                diam hendrerit. Interdum mattis in sed diam egestas metus at
+                duis commodo. Cursus quis cursus dignissim egestas sollicitudin
+                tristique quis. Orci neque quis porttitor eu amet. ommodo.
+                Cursus quis cursus dignissim egestas sollicitudin tristique
+                quis. Orci neque quis porttitor eu amet.
+              </p>
+              <a href="post.html" class="btn btn-primary"
+                >Read full article...</a
+              >
+            </div>
+          </article>
+          <article class="post-card">
+            <img
+              class="post-card__img"
+              src="assets/images/article4.webp"
+              alt="An image of a car"
+            />
+            <div class="post-card__txt-wrapper">
+              <h3 class="heading-tertiary">
+                A Review of Cars with Advanced Infotainment Systems
+              </h3>
+              <div class="post-card__author-info">
+                <img
+                  class="post-card__author-img"
+                  src="assets/images/author.webp"
+                  alt="A photo of Dasteen, the author of the article"
+                />
+                <div class="post-card__author-box">
+                  <p class="post-card__author-name">Dasteen</p>
+                  <p class="post-card__date">
+                    Jan 10, 2024 &nbsp;&nbsp;∙&nbsp;&nbsp; 3 min read
+                  </p>
+                </div>
+              </div>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur. Consectetur risus quis
+                diam hendrerit. Interdum mattis in sed diam egestas metus at
+                duis commodo. Cursus quis cursus dignissim egestas sollicitudin
+                tristique quis. Orci neque quis porttitor eu amet. ommodo.
+                Cursus quis cursus dignissim egestas sollicitudin tristique
+                quis. Orci neque quis porttitor eu amet.
+              </p>
+              <a href="post.html" class="btn btn-primary"
+                >Read full article...</a
+              >
+            </div>
+          </article>
+          <article class="post-card">
+            <img
+              class="post-card__img"
+              src="assets/images/article5.webp"
+              alt="An image of a car"
+            />
+            <div class="post-card__txt-wrapper">
+              <h3 class="heading-tertiary">
+                A Review of Cars with Advanced Infotainment Systems
+              </h3>
+              <div class="post-card__author-info">
+                <img
+                  class="post-card__author-img"
+                  src="assets/images/author.webp"
+                  alt="A photo of Dasteen, the author of the article"
+                />
+                <div class="post-card__author-box">
+                  <p class="post-card__author-name">Dasteen</p>
+                  <p class="post-card__date">
+                    Jan 10, 2024 &nbsp;&nbsp;∙&nbsp;&nbsp; 3 min read
+                  </p>
+                </div>
+              </div>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur. Consectetur risus quis
+                diam hendrerit. Interdum mattis in sed diam egestas metus at
+                duis commodo. Cursus quis cursus dignissim egestas sollicitudin
+                tristique quis. Orci neque quis porttitor eu amet. ommodo.
+                Cursus quis cursus dignissim egestas sollicitudin tristique
+                quis. Orci neque quis porttitor eu amet.
+              </p>
+              <a href="post.html" class="btn btn-primary"
+                >Read full article...</a
+              >
+            </div>
+          </article>
+          <article class="post-card">
+            <img
+              class="post-card__img"
+              src="assets/images/article6.webp"
+              alt="An image of a car"
+            />
+            <div class="post-card__txt-wrapper">
+              <h3 class="heading-tertiary">
+                A Review of Cars with Advanced Infotainment Systems
+              </h3>
+              <div class="post-card__author-info">
+                <img
+                  class="post-card__author-img"
+                  src="assets/images/author.webp"
+                  alt="A photo of Dasteen, the author of the article"
+                />
+                <div class="post-card__author-box">
+                  <p class="post-card__author-name">Dasteen</p>
+                  <p class="post-card__date">
+                    Jan 10, 2024 &nbsp;&nbsp;∙&nbsp;&nbsp; 3 min read
+                  </p>
+                </div>
+              </div>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur. Consectetur risus quis
+                diam hendrerit. Interdum mattis in sed diam egestas metus at
+                duis commodo. Cursus quis cursus dignissim egestas sollicitudin
+                tristique quis. Orci neque quis porttitor eu amet. ommodo.
+                Cursus quis cursus dignissim egestas sollicitudin tristique
+                quis. Orci neque quis porttitor eu amet.
+              </p>
+              <a href="post.html" class="btn btn-primary"
+                >Read full article...</a
+              >
+            </div>
+          </article>
+          <article class="post-card">
+            <img
+              class="post-card__img"
+              src="assets/images/article7.webp"
+              alt="An image of a car"
+            />
+            <div class="post-card__txt-wrapper">
+              <h3 class="heading-tertiary">
+                A Review of Cars with Advanced Infotainment Systems
+              </h3>
+              <div class="post-card__author-info">
+                <img
+                  class="post-card__author-img"
+                  src="assets/images/author.webp"
+                  alt="A photo of Dasteen, the author of the article"
+                />
+                <div class="post-card__author-box">
+                  <p class="post-card__author-name">Dasteen</p>
+                  <p class="post-card__date">
+                    Jan 10, 2024 &nbsp;&nbsp;∙&nbsp;&nbsp; 3 min read
+                  </p>
+                </div>
+              </div>
+              <p class="description">
+                Lorem ipsum dolor sit amet consectetur. Consectetur risus quis
+                diam hendrerit. Interdum mattis in sed diam egestas metus at
+                duis commodo. Cursus quis cursus dignissim egestas sollicitudin
+                tristique quis. Orci neque quis porttitor eu amet. ommodo.
+                Cursus quis cursus dignissim egestas sollicitudin tristique
+                quis. Orci neque quis porttitor eu amet.
+              </p>
+              <a href="post.html" class="btn btn-primary"
+                >Read full article...</a
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container grid grid--2-cols">
+        <a href="index.html" class="logo-wrapper">
+          <img class="logo" src="assets/images/logo.svg" alt="a car wheel" />
+          <p class="logo-title">Logo</p>
+        </a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">Blogs</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Contact Us</a></li>
+            <li><a href="#" class="nav-link">Privacy Policy</a></li>
+          </ul>
+        </nav>
+        <div class="footer__subscribe">
+          <p class="footer__subscribe-title">
+            Subscribe to our news letter to get latest updates and news
+          </p>
+          <form class="footer__subscribe-form" id="subscribe-form">
+            <input type="email" name="email" placeholder="example@email.com" />
+            <button class="btn btn-primary btn-subscribe" type="submit">
+              Subscribe
+              <img src="assets/images/send-arrow.svg" alt="an arrow" />
+            </button>
+          </form>
+        </div>
+        <div class="footer__address">
+          <p>Finstreet 118 2561 abctown</p>
+          <p>example@femail.com 001 21345 442</p>
+        </div>
+        <ul class="footer__social">
+          <li>
+            <a href="#">
+              <img src="assets/images/Facebook.svg" alt="facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/images/Twitter.svg" alt="Twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/images/Instagram.svg" alt="Instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/images/LinkedIn.svg" alt="LinkedIn" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

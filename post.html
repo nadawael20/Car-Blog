@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is a blog about cars" />
+    <!-- favicon -->
+    <link rel="icon" href="assets/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="scripts/script.js" defer></script>
+    <title>Blog</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__wrapper">
+        <a href="index.html" class="logo-wrapper">
+          <img class="logo" src="assets/images/logo.svg" alt="a car wheel" />
+          <p class="logo-title">Logo</p>
+        </a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">Blogs</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Contact Us</a></li>
+            <li>
+              <a href="#" class="nav-link btn btn-secondary">Subscribe</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="nav-btn" aria-label="Toggle Navigation Menu">
+          <img
+            src="assets/images/menu.svg"
+            alt="menu icon"
+            class="icon icon-open"
+          />
+          <img
+            src="assets/images/close.svg"
+            alt="close icon"
+            class="icon icon-close"
+          />
+        </button>
+      </div>
+    </header>
+    <main>
+      <article class="post container">
+        <img
+          class="post__img"
+          src="assets/images/post.webp"
+          alt="a cyan blue car"
+        />
+        <h1 class="heading-primary--v2">
+          Classic Revival: Revisiting Iconic Cars Through Modern Reviews
+        </h1>
+        <div class="post__author-info">
+          <img
+            class="post__author-img"
+            src="assets/images/author.webp"
+            alt="a photo of the author of the article"
+          />
+          <p class="post__author-name">Dasteen</p>
+          <p>Jan 10, 2024 &nbsp;&nbsp;∙&nbsp;&nbsp; 3 min read</p>
+        </div>
+        <div class="post__share">
+          <button class="post__share-btn" aria-label="share on Facebook">
+            <img
+              class="icon"
+              src="assets/images/facebook-share.svg"
+              alt="Facebook icon"
+            />
+          </button>
+          <button class="post__share-btn" aria-label="share on Twitter">
+            <img
+              class="icon"
+              src="assets/images/twitter-share.svg"
+              alt="Twitter icon"
+            />
+          </button>
+          <button class="post__share-btn" aria-label="share on LinkedIn">
+            <img
+              class="icon"
+              src="assets/images/linkedin-share.svg"
+              alt="LinkedIn icon"
+            />
+          </button>
+        </div>
+        <div class="post__content">
+          <p class="title">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod.
+          </p>
+          <p class="description">
+            Lorem ipsum dolor sit amet, <em class="italic">adipiscing elit</em>,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Non blandit massa enim nec. Scelerisque viverra mauris in aliquam
+            sem. At risus viverra adipiscing at in tellus. Sociis natoque
+            penatibus et magnis dis parturient montes. Ridiculus mus mauris
+            vitae ultricies leo. Neque egestas congue quisque egestas diam.
+            Risus in hendrerit gravida rutrum quisque non.
+          </p>
+          <p class="title">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod.
+          </p>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Non
+            blandit massa enim nec. <b class="bolder">Scelerisque</b> viverra
+            mauris in aliquam sem. At risus viverra adipiscing at in tellus.
+            Sociis natoque penatibus et magnis dis parturient montes. Ridiculus
+            mus mauris vitae ultricies leo. Neque egestas congue quisque egestas
+            diam. Risus in hendrerit gravida rutrum quisque non.
+          </p>
+          <figure class="figure">
+            <img
+              class="img"
+              src="assets/images/article5.webp"
+              alt="a person holding a car's key"
+            />
+            <figcaption class="caption">
+              <b>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</b>
+            </figcaption>
+          </figure>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Non
+            blandit massa enim nec. Scelerisque viverra mauris in aliquam sem.
+            At risus viverra adipiscing at in tellus. Sociis natoque penatibus
+            et magnis dis parturient montes. <u>Ridiculus mus</u> mauris vitae
+            ultricies leo. Neque egestas congue quisque egestas diam. Risus in
+            hendrerit gravida rutrum quisque non.
+          </p>
+          <blockquote class="blockquote">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi
+            sapiente minima, atque illum amet, rem neque eveniet, corporis
+            aspernatur facilis blanditiis consequatur non sint animi suscipit
+            maiores nam eius inventore.
+          </blockquote>
+          <ul class="list">
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>
+              <q class="quote"
+                ><em>Non blandit massa enim nec scelerisque</em></q
+              >
+            </li>
+            <li>Neque egestas congue quisque egestas</li>
+          </ul>
+        </div>
+        <div class="section-author container">
+          <img
+            class="img"
+            src="assets/images/author.webp"
+            alt="a photo of the author of the article"
+          />
+          <p class="name">Dasteen</p>
+          <p>Automotive Journalist</p>
+          <p>Works in Lorem ipsum</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            recusandae placeat et sunt blanditiis necessitatibus iste tempore
+            esse distinctio dolore.
+          </p>
+        </div>
+      </article>
+      <aside class="container related">
+        <h2 class="heading-tertiary">Related Articles:</h2>
+        <ul class="related-articles__list">
+          <li>
+            <a href="#" class="related__article">
+              <img
+                class="img"
+                src="assets/images/article4.webp"
+                alt="an image of a car"
+              />
+              <p class="title">Lorem ipsum dolor sit.</p>
+              <p class="description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Corporis, molestiae!
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="related__article">
+              <img
+                class="img"
+                src="assets/images/article2.webp"
+                alt="an image of a car"
+              />
+              <p class="title">Lorem ipsum dolor sit.</p>
+              <p class="description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Corporis, molestiae!
+              </p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="related__article">
+              <img
+                class="img"
+                src="assets/images/article3.webp"
+                alt="an image of a car"
+              />
+              <p class="title">Lorem ipsum dolor sit.</p>
+              <p class="description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Corporis, molestiae!
+              </p>
+            </a>
+          </li>
+        </ul>
+      </aside>
+    </main>
+    <footer class="footer">
+      <div class="container grid grid--2-cols">
+        <a href="index.html" class="logo-wrapper">
+          <img class="logo" src="assets/images/logo.svg" alt="a car wheel" />
+          <p class="logo-title">Logo</p>
+        </a>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">Blogs</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Contact Us</a></li>
+            <li><a href="#" class="nav-link">Privacy Policy</a></li>
+          </ul>
+        </nav>
+        <div class="footer__subscribe">
+          <p class="footer__subscribe-title">
+            Subscribe to our news letter to get latest updates and news
+          </p>
+          <form class="footer__subscribe-form" id="subscribe-form">
+            <input type="email" name="email" placeholder="example@email.com" />
+            <button class="btn btn-primary btn-subscribe" type="submit">
+              Subscribe
+              <img src="assets/images/send-arrow.svg" alt="an arrow" />
+            </button>
+          </form>
+        </div>
+        <div class="footer__address">
+          <p>Finstreet 118 2561 abctown</p>
+          <p>example@femail.com 001 21345 442</p>
+        </div>
+        <ul class="footer__social">
+          <li>
+            <a href="#">
+              <img src="assets/images/Facebook.svg" alt="facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/images/Twitter.svg" alt="Twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/images/Instagram.svg" alt="Instagram" />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="assets/images/LinkedIn.svg" alt="LinkedIn" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>

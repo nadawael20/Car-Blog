@@ -1,0 +1,58 @@
+.post-card {
+  display: flex;
+  gap: 2rem;
+}
+
+.post-card__img {
+  display: block;
+  width: 100%;
+  max-width: 48rem;
+  height: auto;
+}
+
+.post-card__txt-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.post-card__author-info {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-family: var(--font-j);
+}
+
+.post-card__author-img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.post-card__author-name {
+  font-size: 1rem;
+}
+
+.post-card__date {
+  font-size: 0.9rem;
+}
+
+.post-card .btn {
+  padding: 0.9rem 3.4rem;
+}
+/***************/
+/* RESPONSIVE */
+/*************/
+@media (max-width: 44em) {
+  .post-card {
+    flex-direction: column;
+    padding: 3rem;
+    box-shadow: 0.4rem 0.5rem 0.8rem rgba(0, 0, 0, 0.11);
+    border-radius: var(--radius-10);
+    background: linear-gradient(
+      to bottom right,
+      var(--color-white),
+      var(--bg-lila)
+    );
+  }
+}
